@@ -1,0 +1,121 @@
+Snowflake
+│
+├── 1. Architecture
+│     ├── Storage Layer
+│     │     ├── Micro-partitions
+│     │     ├── Columnar storage
+│     │     ├── Compression & Encryption
+│     │     └── Metadata in Cloud Services
+│     ├── Compute Layer
+│     │     ├── Virtual Warehouses
+│     │     ├── MPP clusters
+│     │     └── Independent scaling
+│     └── Cloud Services Layer
+│           ├── Authentication
+│           ├── Metadata management
+│           ├── Query optimization
+│           ├── Access control
+│           └── Result cache
+│
+├── 2. Storage Concepts
+│     ├── Micro-partitions
+│     ├── Clustering & Re-clustering
+│     ├── File formats (CSV, JSON, Parquet, ORC)
+│     └── Semi-structured types (VARIANT, OBJECT, ARRAY)
+│
+├── 3. Compute (Warehouses)
+│     ├── Sizes (XS → 4XL)
+│     ├── Auto-suspend / Auto-resume
+│     ├── Multi-cluster warehouses
+│     │     ├── Min/Max clusters
+│     │     ├── Standard policy
+│     │     └── Economy policy
+│     └── Caching
+│           ├── Metadata cache
+│           ├── Result cache
+│           └── Warehouse cache
+│
+├── 4. Data Loading
+│     ├── Stages
+│     │     ├── Internal (User, Table, Named)
+│     │     └── External (S3, Blob, GCS)
+│     ├── COPY INTO
+│     ├── File sizing best practices
+│     └── Validation & error handling
+│
+├── 5. Snowpipe
+│     ├── Serverless ingestion
+│     ├── Event notifications
+│     ├── COPY inside pipe
+│     └── Metadata retention (14 days)
+│
+├── 6. Unloading Data
+│     ├── COPY INTO <stage>
+│     ├── Compression options
+│     └── GET command
+│
+├── 7. Tables & Views
+│     ├── Table Types
+│     │     ├── Permanent
+│     │     ├── Transient
+│     │     ├── Temporary
+│     │     └── External
+│     ├── Views
+│     │     ├── Standard
+│     │     ├── Secure
+│     │     ├── Materialized
+│     │     └── Secure Materialized
+│     └── Zero-copy cloning
+│
+├── 8. Time Travel & Fail-safe
+│     ├── Time Travel (0–90 days)
+│     ├── UNDROP
+│     ├── Historical cloning
+│     └── Fail-safe (7 days)
+│
+├── 9. Data Sharing
+│     ├── Shares
+│     ├── Reader accounts
+│     ├── Provider vs Consumer
+│     └── Cross-cloud sharing
+│
+├── 10. Security
+│     ├── Encryption (end-to-end)
+│     ├── Key hierarchy
+│     ├── Tri-secret secure
+│     ├── Network policies
+│     ├── MFA & SSO
+│     └── Masking & Row Access Policies
+│
+├── 11. RBAC
+│     ├── Roles (ACCOUNTADMIN, SECURITYADMIN, SYSADMIN, PUBLIC)
+│     ├── Privileges
+│     ├── Grants
+│     └── Least privilege model
+│
+├── 12. Semi-Structured Data
+│     ├── VARIANT
+│     ├── OBJECT
+│     ├── ARRAY
+│     ├── FLATTEN
+│     └── Dot notation
+│
+├── 13. Query Optimization
+│     ├── Pruning
+│     ├── Statistics
+│     ├── Query Profile
+│     ├── Join optimization
+│     └── Result cache usage
+│
+├── 14. Integrations
+│     ├── Connectors (Python, Spark, Kafka)
+│     ├── JDBC/ODBC
+│     ├── Snowpark
+│     └── External functions
+│
+└── 15. Governance & Monitoring
+      ├── Resource monitors
+      ├── Account Usage views
+      ├── Information Schema
+      ├── Billing & usage
+      └── Query history
